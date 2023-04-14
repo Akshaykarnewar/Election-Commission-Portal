@@ -1,0 +1,55 @@
+ui --> spring boot application --> main method --> controller --> service(I) --> serviceImpl(c) --> dao(I) --> jpa repo -->
+database --> ( 1 | akash123@gmail.com | Akash2525 | 9823512020) database object --> controller --> ui
+	 --> ( 1 | akash123@gmail.com | Akash2525 ) --> controller --> ui
+
+entity --> pojo class --> fields --> (1 | akash123@gmail.com | Akash2525 | 9823512020 ) 
+model --> DTO --> data transfer object --> required fields (email and pass) 
+
+
+@restcontroller
+@autowired
+@entity
+@service
+@jparepository
+
+responseEntity
+pathVariable
+requestParam
+
+requestMapping --> get, post, put, delete
+
+mysql properties in application.properties
+
+dependencies-
+SpringWeb
+SpringdataJPA
+MYSQLDriver
+SpringDevTools
+Lombok
+
+
+Validations
+Security
+
+
+EMS --> create, retrieve, update, delete  --> spring rest project
+
+react - dom -->
+we want to be setting up our main App component to handle the conditional Switching of the components around, based on our route, or URL. 
+So for this we use React Router’s <Switch></Switch> component, which will allow us to conditionally render certain components based upon our route. 
+The Switch works by going through all its children and rendering the first Route whose path matches the current URL of the application.
+
+front end flow -->
+1 first package.json file gets loaded which contains all the libraries and dependencies whichever we need in our application.
+2 after 1st step when we give command npm start then index.js file gets called and render dom i.e root And app component will run.
+3 after this the root div from index.html will get called and our app component from app.js will run.
+
+
+Errors-->
+1. white lable error - caused due to not scanning of sub packages and classes under it. To solve this error use @ConnectScan notation inside the main method.
+2. EnvelopScripting error - this error is caused due to use of old version of react script. To solve this error just modify your package.json file under script tag and simply use "start": "react-scripts --openssl-legacy-provider start".
+3. 404 not found - caused due to incorrect use of url
+4. npm start not recognized - this is handled by simply installing npm install
+5. problem in fetching data from databse - this was handled by using @CrossOrigin it basically means that the host which is representing the UI, and the host which serves the data both are different.
+
+ 

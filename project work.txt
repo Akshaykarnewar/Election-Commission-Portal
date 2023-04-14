@@ -1,0 +1,35 @@
+2 client 8
+1 voter 
+email phone p/w  unique{id}
+primary key unique id
+
+2.voterinfo 
+name  dob age gender voter id uid 
+ primary key - voter id 
+forginer key - unique id 
+
+
+3.voteraddress 
+address id state district taluka village pincode assembly parlaiment id  voter id 
+primary key -address id
+forign key - voter id parliament id 
+
+4.voter documennt
+
+ state  district taluka vilaage pincode assembly parliament 
+
+5. parliament info(primary key-parliament id)
+name state district parliament id 
+
+6.election primary key (election id )
+election id election name state year date result date 
+
+7.parliament candidate (primary key- candidate key  
+forigen key - voter id parliament id)
+candidate id parliament id partyid elction id voter id 
+
+
+8. result
+parliament id candidate id election id 
+primary key -parliament id result id 
+
